@@ -22,8 +22,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.bt.bdaddr_path="/data/misc/bluetooth/bdaddr"
 
 # Data modules
-ro.use_data_netmgrd=true
-persist.data.netmgrd.qos.enable=true
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.use_data_netmgrd=true \
+    persist.data.netmgrd.qos.enable=true
 
 # Display
 PRODUCT_PROPERTY_OVERRIDES += \
